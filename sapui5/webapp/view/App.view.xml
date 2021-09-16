@@ -14,6 +14,7 @@
                     </headerContent>
                     <content>
                         <mvc:XMLView viewName="elvisivan.sapui5.view.HelloPanel" />
+                        <mvc:XMLView viewName="elvisivan.sapui5.view.InvoicesList" />
                     </content>
                 </Page>
             </pages>
