@@ -6,7 +6,35 @@
       "command": "sap.ux.appGenerator.ui5Version"
     }
   ],
-  "configurations": [],
+  "configurations": [
+    {
+      "name": "sapui5",
+      "cwd": "${workspaceFolder}/sapui5",
+      "runtimeArgs": [
+        "run-script",
+        "start"
+      ],
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "args": [
+        "--",
+        "--ui5Uri https://ui5.sap.com --ui5 1.90.6"
+      ],
+      "windows": {
+        "runtimeExecutable": "npm.cmd",
+        "args": [
+          "--",
+          "--ui5Uri https://ui5.sap.com --ui5 1.90.6"
+        ]
+      },
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/Invoices/sapui5\"}"
+      }
+    }
+  ],
   "compounds": [],
   "version": "0.2.0"
 }
