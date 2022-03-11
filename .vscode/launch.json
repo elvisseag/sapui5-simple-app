@@ -56,6 +56,31 @@
         "FIORI_TOOLS_UI5_VERSION": "1.95.0",
         "FIORI_TOOLS_UI5_URI": "https://ui5.sap.com"
       }
+    },
+    {
+      "name": "main sapui5",
+      "cwd": "${workspaceFolder}/sapui5",
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "args": [
+        "--open",
+        "index.html"
+      ],
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/Invoices/sapui5\"}",
+        "FIORI_TOOLS_UI5_VERSION": "1.96.1",
+        "FIORI_TOOLS_UI5_URI": "https://ui5.sap.com"
+      }
     }
   ],
   "compounds": [],
